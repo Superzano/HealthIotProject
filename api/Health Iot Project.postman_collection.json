@@ -1,0 +1,376 @@
+{
+	"info": {
+		"_postman_id": "239be519-086b-4bbc-b4d7-36aeba920d3f",
+		"name": "Health Iot Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Patients",
+			"item": [
+				{
+					"name": "Get Patients",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:7070/api/iot/inventory/patient",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7070",
+							"path": [
+								"api",
+								"iot",
+								"inventory",
+								"patient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Patient By ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:7070/api/iot/inventory/patient/218f1737-d7cf-4891-b4f2-ab330613a4bc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7070",
+							"path": [
+								"api",
+								"iot",
+								"inventory",
+								"patient",
+								"218f1737-d7cf-4891-b4f2-ab330613a4bc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Patient",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Martina\",\r\n    \"surname\": \"Belvedere\",\r\n    \"gender\": \"female\",\r\n    \"dateOfBirth\": \"03-04-1969\",\r\n    \"placeOfBirth\": \"Mantova\",\r\n    \"phoneNumber\": \"3492778521\",\r\n    \"email\": \"martina.belvedere@libero.it\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7070/api/iot/inventory/patient",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7070",
+							"path": [
+								"api",
+								"iot",
+								"inventory",
+								"patient"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify Patient",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientId\": \"218f1737-d7cf-4891-b4f2-ab330613a4bc\",\r\n    \"phoneNumber\": \"3472945775\",\r\n    \"email\": \"lucia.bianchi.modified@libero.it\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7070/api/iot/inventory/patient/218f1737-d7cf-4891-b4f2-ab330613a4bc",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7070",
+							"path": [
+								"api",
+								"iot",
+								"inventory",
+								"patient",
+								"218f1737-d7cf-4891-b4f2-ab330613a4bc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Patient",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7070/api/iot/inventory/patient/de5dbdf3-ab9c-4b1f-860c-a72f91caa125",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7070",
+							"path": [
+								"api",
+								"iot",
+								"inventory",
+								"patient",
+								"de5dbdf3-ab9c-4b1f-860c-a72f91caa125"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "HealthCheck",
+			"item": [
+				{
+					"name": "Get HealthChecks",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:7070/api/iot/inventory/healthcheck",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7070",
+							"path": [
+								"api",
+								"iot",
+								"inventory",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get HealthCheck By ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:7070/api/iot/inventory/healthcheck/2b52e507-6326-4cac-9831-f954adaf2d5c",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7070",
+							"path": [
+								"api",
+								"iot",
+								"inventory",
+								"healthcheck",
+								"2b52e507-6326-4cac-9831-f954adaf2d5c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get HealthChecks with Filter",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:7070/api/iot/inventory/healthcheck?patientId=ab4e277b-dff6-4475-9944-82eabd5a93e9&anomaly=saturation",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7070",
+							"path": [
+								"api",
+								"iot",
+								"inventory",
+								"healthcheck"
+							],
+							"query": [
+								{
+									"key": "patientId",
+									"value": "ab4e277b-dff6-4475-9944-82eabd5a93e9"
+								},
+								{
+									"key": "anomaly",
+									"value": "saturation"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create HealthCheck",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"patientId\": \"ab4e277b-dff6-4475-9944-82eabd5a93e9\",\r\n    \"doctorId\": \"doctor00001\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7070/api/iot/inventory/healthcheck",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7070",
+							"path": [
+								"api",
+								"iot",
+								"inventory",
+								"healthcheck"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Modify HealthCheck",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"healthcheckId\": \"cdad142d-f2f8-46f5-824b-b38b003fe8e1\",\r\n        \"doctorId\": \"doctor00002\",\r\n        \"smartWatchId\": \"smartWatch00003\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:7070/api/iot/inventory/healthcheck/cdad142d-f2f8-46f5-824b-b38b003fe8e1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7070",
+							"path": [
+								"api",
+								"iot",
+								"inventory",
+								"healthcheck",
+								"cdad142d-f2f8-46f5-824b-b38b003fe8e1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete HealthCheck",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:7070/api/iot/inventory/healthcheck/612f504e-b680-457f-9612-2a5fd9e1dbd0",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "7070",
+							"path": [
+								"api",
+								"iot",
+								"inventory",
+								"healthcheck",
+								"612f504e-b680-457f-9612-2a5fd9e1dbd0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

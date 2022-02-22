@@ -1,0 +1,8 @@
+it.unimore.iot.health.api.datamanager.communication
+it.unimore.iot.health.api.datamanager.dto
+it.unimore.iot.health.api.datamanager.exception
+it.unimore.iot.health.api.datamanager.model
+it.unimore.iot.health.api.datamanager.persistence
+it.unimore.iot.health.api.datamanager.resources
+it.unimore.iot.health.api.datamanager.services
+it.unimore.iot.health.api.datamanager.utils
